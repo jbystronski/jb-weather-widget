@@ -2,7 +2,7 @@
   "name": "jb-weather-widget",
   "description": "Weather widget, vanilla version",
   "author": "Jakub Bystroński",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "jbystronski/jb-weather-widget",
   "homepage": "https://jb-weather-widget.surge.sh",
   "private": false,
