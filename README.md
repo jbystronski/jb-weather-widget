@@ -4,6 +4,8 @@
 
 Weather widget for javascript applications
 
+<a href="https://jb-weather-widget.surge.sh">Demo</a>
+
 #### Installation
 
 ```bash
