@@ -1,0 +1,169 @@
+.forecastContainer {
+  text-align: center;
+}
+
+.forecastIconWrapper {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.forecastTextWrapper {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.forecastTimeWrapper {
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+}
+
+.textPrimary {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.textSecondary {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.todayContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.todayInner {
+  display: flex;
+  align-items: center;
+}
+
+.todayIconContainer {
+  margin-right: 1rem;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todayTemperatureWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.todayTemperature {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 100%;
+}
+
+.todayDetailsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.todayDetailsTextMargin {
+  margin-left: 0.7rem;
+}
+
+.mainScreenContainer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.rightScreenContainer {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  padding: 1rem;
+}
+
+.geoDropdownContainer {
+  position: relative;
+  width: 16rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.geoDropdownInputWrapper {
+  background: rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inerit;
+  box-sizing: border-box;
+  padding: 4px;
+  width: 100%;
+}
+
+.geoDropdownInput {
+  border: none;
+  background: transparent;
+  width: auto;
+  outline: none;
+}
+
+.geoDropdownList {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: inherit;
+  max-height: 24rem;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.geoDropdownListItem {
+  font-size: 0.845rem;
+  color: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.geoDropdownIconsWrapper > svg {
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* .visible {
+  display: block;
+} */
+
+.hidden {
+  display: none;
+}
