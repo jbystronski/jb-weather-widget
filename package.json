@@ -1,6 +1,6 @@
 {
   "name": "jb-weather-widget",
-  "description": "Weather widget for javascript applications",
+  "description": "Weather widget, vanilla version",
   "author": "Jakub Bystroński",
   "version": "1.0.0",
   "repository": "jbystronski/jb-weather-widget",
