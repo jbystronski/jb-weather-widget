@@ -3,6 +3,8 @@
   "description": "Weather widget for javascript applications",
   "author": "Jakub Bystroński",
   "version": "0.0.0",
+  "repository": "jbystronski/jb-weather-widget",
+  "homepage": "https://jb-weather-widget.surge.sh",
   "private": false,
   "main": "dist/main.cjs.js",
   "module": "dist/main.esm.js",
