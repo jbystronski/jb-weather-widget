@@ -16,7 +16,7 @@ export function createTimer(data) {
       clearInterval(timer);
     }
 
-    timerText.innerText = "00 : 00: 00";
+    timerText.innerText = "00 : 00 : 00";
     timer = setInterval(() => {
       const time = getTimezoneCurrentTime(data.utc_offset_seconds);
 
