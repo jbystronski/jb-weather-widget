@@ -93,3 +93,7 @@ const theme = {
   },
 };
 ```
+
+#### See also
+
+<a href="https://github.com/jbystronski/jb-react-weather-widget">React version</a>
