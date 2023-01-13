@@ -1,11 +1,12 @@
 import { pad, getTimezoneCurrentTime } from "./utils/formatTime";
 import { globals } from "./utils/globals";
 import { createElement } from "./utils/createElement";
+import { classNames } from "./constants/classNames";
 
 export function createTimer(data) {
   const timerText = createElement({
     tag: "p",
-    classNames: "textSecondary",
+    classNames: classNames["textSecondary"],
     style: `color: ${globals.theme.color.font.timer}`,
   });
 

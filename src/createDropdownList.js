@@ -1,12 +1,13 @@
 import { globals } from "./utils/globals";
 import { createElement } from "./utils/createElement";
 import { getFullLocation } from "./utils/getFullLocation";
+import { classNames } from "./constants/classNames";
 
 export function createDropdownList(gpsData) {
   const list = createElement({
     tag: "ul",
 
-    classNames: ["geoDropdownList"],
+    classNames: classNames["geoDropdownList"],
   });
 
   function handleListItemClick(index) {
@@ -17,7 +18,7 @@ export function createDropdownList(gpsData) {
     gpsData.forEach((location, index) => {
       const li = createElement({
         tag: "li",
-        classNames: "geoDropdownListItem",
+        classNames: classNames["geoDropdownListItem"],
         style: `background-color: ${globals.theme.bg.list.main}; color: ${globals.theme.color.font.list.main}; border-color: ${globals.theme.bg.list.border};`,
         innerText: getFullLocation(location),
       });

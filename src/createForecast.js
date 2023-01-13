@@ -2,6 +2,7 @@ import "./css/app.css";
 import { createSvgIcon } from "./createSvgIcon";
 import { globals } from "./utils/globals";
 import { createElement } from "./utils/createElement";
+import { classNames } from "./constants/classNames";
 
 export function createForecast({
   description,
@@ -13,25 +14,25 @@ export function createForecast({
 }) {
   const container = createElement({
     tag: "div",
-    classNames: "forecastContainer",
+    classNames: classNames["forecastContainer"],
     style: `background-color: ${globals.theme.bg.bottom}; border-radius: ${globals.theme.borderRadius.element}`,
   });
 
   const timeWrapper = createElement({
     tag: "div",
-    classNames: "forecastTimeWrapper",
+    classNames: classNames["forecastTimeWrapper"],
   });
 
   const timeText = createElement({
     tag: "p",
     innerText: time,
-    classNames: "textSecondary",
+    classNames: classNames["textSecondary"],
     style: `color: ${globals.theme.color.font.bottom}`,
   });
 
   const iconWrapper = createElement({
     tag: "div",
-    classNames: "forecastIconWrapper",
+    classNames: classNames["forecastIconWrapper"],
   });
 
   const svg = createSvgIcon({
@@ -42,7 +43,7 @@ export function createForecast({
 
   const textWrapper = createElement({
     tag: "div",
-    classNames: "forecastTextWrapper",
+    classNames: classNames["forecastTextWrapper"],
   });
 
   const temperatureText = createElement({
@@ -50,14 +51,14 @@ export function createForecast({
     innerText: `${Math.round(temp_max)}${tempSymbol}/${Math.round(
       temp_min
     )}${tempSymbol}`,
-    classNames: "textSecondary",
+    classNames: classNames["textSecondary"],
     style: `color: ${globals.theme.color.font.bottom}`,
   });
 
   const descriptionText = createElement({
     tag: "p",
     innerText: description,
-    classNames: "textSecondary",
+    classNames: classNames["textSecondary"],
     style: `color: ${globals.theme.color.font.bottom}`,
   });
 

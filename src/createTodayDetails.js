@@ -2,6 +2,7 @@ import { globals } from "./utils/globals";
 import { createSvgIcon } from "./createSvgIcon";
 import "./css/app.css";
 import { createElement } from "./utils/createElement";
+import { classNames } from "./constants/classNames";
 
 export function createTodayDetails(data) {
   const { daily, current_weather, tempSymbol, windspeed_unit } = data;
@@ -32,7 +33,10 @@ export function createTodayDetails(data) {
   const container = createElement({ tag: "div" });
 
   list.forEach(({ icon, val }, index) => {
-    const row = createElement({ tag: "div", classNames: "todayDetailsRow" });
+    const row = createElement({
+      tag: "div",
+      classNames: classNames["todayDetailsRow"],
+    });
 
     const svg = createSvgIcon({
       path: icon,
@@ -42,7 +46,10 @@ export function createTodayDetails(data) {
 
     const text = createElement({
       tag: "p",
-      classNames: ["textSecondary", "todayDetailsTextMargin"],
+      classNames: [
+        classNames["textSecondary"],
+        classNames["todayDetailsTextMargin"],
+      ],
       style: `color: ${globals.theme.color.font.right}`,
       innerText: val,
     });

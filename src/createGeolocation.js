@@ -3,6 +3,7 @@ import { globals } from "./utils/globals";
 import { createSvgIcon } from "./createSvgIcon";
 import { createElement } from "./utils/createElement";
 import { createDropdownList } from "./createDropdownList";
+import { classNames } from "./constants/classNames";
 
 export function createGeolocation(data) {
   const { gpsData } = data;
@@ -17,25 +18,25 @@ export function createGeolocation(data) {
 
   const container = createElement({
     tag: "div",
-    classNames: "geoDropdownContainer",
-    id: "dropDownContainer",
+    classNames: classNames["geoDropdownContainer"],
+    id: "jb-weather-widget-dropdown-container",
   });
 
   const inputWrapper = createElement({
     tag: "div",
-    classNames: "geoDropdownInputWrapper",
+    classNames: classNames["geoDropdownInputWrapper"],
     style: `color: ${globals.theme.color.font.main}`,
   });
 
   const iconWrapper = createElement({
     tag: "div",
-    classNames: "geoDropdownIconsWrapper",
+    classNames: classNames["geoDropdownIconsWrapper"],
   });
 
   const input = createElement({
     tag: "input",
-    id: "geoDropdownInput",
-    classNames: "geoDropdownInput",
+    id: "jb-weather-widget-geo-dropdown-input",
+    classNames: classNames["geoDropdownInput"],
     style: `color: ${globals.theme.color.font.main}`,
   });
 
@@ -44,7 +45,9 @@ export function createGeolocation(data) {
     size: "0.5rem",
     path: "arrow_down",
     clickHandler: function () {
-      const list = document.querySelector(".geoDropdownList");
+      const list = document.querySelector(
+        ".jb-weather-widget-geo-dropdown-list"
+      );
 
       list.classList.contains("hidden")
         ? list.classList.remove("hidden")
@@ -56,7 +59,9 @@ export function createGeolocation(data) {
     size: "1rem",
     path: "search",
     clickHandler: (e) => {
-      onSearch(document.getElementById("geoDropdownInput").value);
+      onSearch(
+        document.getElementById("jb-weather-widget-geo-dropdown-input").value
+      );
     },
   });
 

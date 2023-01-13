@@ -1,6 +1,7 @@
 import { getFullLocation } from "./utils/getFullLocation";
 import { globals } from "./utils/globals";
 import { createElement } from "./utils/createElement";
+import { classNames } from "./constants/classNames";
 
 export function createLocation(data) {
   const { daily, currentLocation } = data;
@@ -11,7 +12,7 @@ export function createLocation(data) {
 
   const locationText = createElement({
     tag: "p",
-    classNames: "textPrimary",
+    classNames: classNames["textPrimary"],
     style: `color: ${color}`,
     innerText: currentLocation
       ? getFullLocation(currentLocation).split(", ").slice(0, 2).join(", ")
@@ -20,7 +21,7 @@ export function createLocation(data) {
 
   const timeText = createElement({
     tag: "p",
-    classNames: "textSecondary",
+    classNames: classNames["textSecondary"],
     style: `color: ${color}`,
     innerText: daily[0].time,
   });

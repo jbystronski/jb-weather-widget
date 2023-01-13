@@ -1,8 +1,8 @@
-.forecastContainer {
+.jb-weather-widget-forecast-container {
   text-align: center;
 }
 
-.forecastIconWrapper {
+.jb-weather-widget-forecast-icon-wrapper {
   height: 4rem;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   margin-top: 8px;
 }
 
-.forecastTextWrapper {
+.jb-weather-widget-forecast-text-wrapper {
   height: 4rem;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   margin-top: 8px;
 }
 
-.forecastTimeWrapper {
+.jb-weather-widget-forecast-time-wrapper {
   height: 2rem;
   display: flex;
   flex-direction: column;
@@ -29,25 +29,25 @@
   margin-top: 8px;
 }
 
-.text {
+.jb-weather-widget-text {
   padding: 0;
   margin: 0;
 }
 
-.textPrimary {
+.jb-weather-widget-text-primary {
   padding: 0;
   margin: 0;
   font-size: 1rem;
   margin-bottom: 0.3rem;
 }
 
-.textSecondary {
+.jb-weather-widget-text-secondary {
   padding: 0;
   margin: 0;
   font-size: 0.8rem;
 }
 
-.todayContainer {
+.jb-weather-widget-today-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,12 +56,12 @@
   height: 100%;
 }
 
-.todayInner {
+.jb-weather-widget-today-inner {
   display: flex;
   align-items: center;
 }
 
-.todayIconContainer {
+.jb-weather-widget-today-icon-container {
   margin-right: 1rem;
   height: 9rem;
   display: flex;
@@ -70,30 +70,30 @@
   justify-content: center;
 }
 
-.todayTemperatureWrapper {
+.jb-weather-widget-today-temperature-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
-.todayTemperature {
+.jb-weather-widget-today-temperature {
   font-size: 3rem;
   margin: 0;
   line-height: 100%;
 }
 
-.todayDetailsRow {
+.jb-weather-widget-today-details-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.todayDetailsTextMargin {
+.jb-weather-widget-today-details-text-margin {
   margin-left: 0.7rem;
 }
 
-.mainScreenContainer {
+.jb-weather-widget-main-screen-container {
   grid-column-start: 1;
   grid-column-end: 4;
   position: relative;
@@ -103,13 +103,13 @@
   padding: 0;
 }
 
-.rightScreenContainer {
+.jb-weather-widget-right-screen-container {
   grid-column-start: 4;
   grid-column-end: 6;
   padding: 1rem;
 }
 
-.geoDropdownContainer {
+.jb-weather-widget-geo-dropdown-container {
   position: relative;
   width: 16rem;
   height: 3rem;
@@ -117,7 +117,7 @@
   align-items: center;
 }
 
-.geoDropdownInputWrapper {
+.jb-weather-widget-geo-dropdown-input-wrapper {
   background: rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
@@ -128,14 +128,14 @@
   width: 100%;
 }
 
-.geoDropdownInput {
+.jb-weather-widget-geo-dropdown-input {
   border: none;
   background: transparent;
   width: auto;
   outline: none;
 }
 
-.geoDropdownList {
+.jb-weather-widget-geo-dropdown-list {
   position: absolute;
   left: 0;
   top: 100%;
@@ -147,7 +147,7 @@
   list-style: none;
 }
 
-.geoDropdownListItem {
+.jb-weather-widget-geo-dropdown-list-item {
   font-size: 0.845rem;
   color: inherit;
   cursor: pointer;
@@ -155,7 +155,7 @@
   padding: 4px;
 }
 
-.geoDropdownIconsWrapper > svg {
+.jb-weather-widget-geo-dropdown-icons-wrapper > svg {
   cursor: pointer;
   margin-left: 8px;
 }

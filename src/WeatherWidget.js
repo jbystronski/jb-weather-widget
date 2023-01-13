@@ -37,7 +37,9 @@ export class WeatherWidget {
       getGpsData({ name: v }).then((data) => {
         this.gpsData = data;
 
-        const container = document.getElementById("dropDownContainer");
+        const container = document.getElementById(
+          "jb-weather-widget-dropdown-container"
+        );
 
         container.replaceChild(
           createDropdownList(this.gpsData),

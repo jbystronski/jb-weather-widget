@@ -1,0 +1,26 @@
+const prefix = "jb-weather-widget";
+
+export const classNames = {
+  forecastContainer: `${prefix}-forecast-container`,
+  forecastIconWrapper: `${prefix}-forecast-icon-wrapper`,
+  forecastTextWrapper: `${prefix}-forecast-text-wrapper`,
+  forecastTimeWrapper: `${prefix}-forecast-time-wrapper`,
+  text: `${prefix}-text`,
+  textPrimary: `${prefix}-text-primary`,
+  textSecondary: `${prefix}-text-secondary`,
+  todayContainer: `${prefix}-today-container`,
+  todayInner: `${prefix}-today-inner`,
+  todayIconContainer: `${prefix}-today-icon-container`,
+  todayTemperatureWrapper: `${prefix}-today-temperature-wrapper`,
+  todayTemperature: `${prefix}-today-temperature`,
+  todayDetailsRow: `${prefix}-today-details-row`,
+  todayDetailsTextMargin: `${prefix}-today-details-text-margin`,
+  mainScreenContainer: `${prefix}-main-screen-container`,
+  rightScreenContainer: `${prefix}-right-screen-container`,
+  geoDropdownContainer: `${prefix}-geo-dropdown-container`,
+  geoDropdownInputWrapper: `${prefix}-geo-dropdown-input-wrapper`,
+  geoDropdownInput: `${prefix}-geo-dropdown-input`,
+  geoDropdownList: `${prefix}-geo-dropdown-list`,
+  geoDropdownListItem: `${prefix}-geo-dropdown-list-item`,
+  geoDropdownIconsWrapper: `${prefix}-geo-dropdown-icons-wrapper`,
+};
